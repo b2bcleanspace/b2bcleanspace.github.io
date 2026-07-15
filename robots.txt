@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://b2bcleanspace.github.io/b2c-cleaning-dubai/sitemap.xml
+Sitemap: https://apartment-cleaning-dubai-b2bcleanspace.netlify.app/sitemap.xml
