@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://home.b2bcleanspace.com/sitemap.xml
+Sitemap: https://b2bcleanspace.github.io/b2c-cleaning-dubai/sitemap.xml
