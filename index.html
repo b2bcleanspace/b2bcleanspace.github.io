@@ -507,124 +507,197 @@
   </div>
 </section>
 
-<!-- ============ ESTIMATE FORM ============ -->
+<!-- ============ ESTIMATE — STEP BY STEP ============ -->
 <section class="s est" id="estimate">
-  <div class="container est-in">
-    <div class="est-copy">
-      <p class="eyebrow"><i class="dot"></i><span data-i18n="est.eyebrow">Estimate</span></p>
-      <h2 class="h-1" data-i18n="est.h2">Get your cleaning estimate</h2>
-      <p class="lead" data-i18n="est.lead">Fill in what you know. The form builds a structured message and opens WhatsApp — nothing is sent anywhere else.</p>
-      <ul class="est-points">
-        <li data-i18n="est.p1">Assessment and estimate are free</li>
-        <li data-i18n="est.p2">Scope and price fixed before work begins</li>
-        <li data-i18n="est.p3">We reply between 7:00 and 22:00, seven days a week</li>
-      </ul>
-      <div class="est-contact">
-        <a href="tel:+971586997277" class="est-c"><span data-i18n="est.call">Call</span><b>+971 58 699 7277</b></a>
-        <a href="mailto:info@b2bcleanspace.com" class="est-c"><span data-i18n="est.email">Email</span><b>info@b2bcleanspace.com</b></a>
+  <div class="container">
+    <div class="s-head">
+      <div>
+        <p class="eyebrow"><i class="dot"></i><span data-i18n="est.eyebrow">Estimate</span></p>
+        <h2 class="h-1" data-i18n="est.h2">Tell us about your property</h2>
       </div>
+      <p class="lead" data-i18n="est.lead">Four quick steps, almost no typing. We come back with a scope and a figure — the estimate is free and nothing is charged until you approve it.</p>
     </div>
 
-    <form class="est-form" id="estForm" novalidate>
-      <div class="fr fr-2">
-        <div class="f">
-          <label for="f-prop" data-i18n="f.prop">Property type <em>*</em></label>
-          <select id="f-prop" name="prop" required aria-describedby="e-prop">
-            <option value="" data-i18n="f.choose">Choose…</option>
-            <option value="apartment" data-i18n="prop.1">Apartment</option>
-            <option value="serviced" data-i18n="prop.2">Serviced Apartment</option>
-            <option value="penthouse" data-i18n="prop.3">Penthouse</option>
-            <option value="townhouse" data-i18n="prop.4">Townhouse</option>
-            <option value="villa" data-i18n="prop.5">Villa</option>
-            <option value="other" data-i18n="prop.6">Other Property</option>
-          </select>
-          <p class="err" id="e-prop" hidden></p>
+    <form class="wiz" id="estForm" novalidate>
+      <div class="wiz-main">
+        <div class="wiz-head">
+          <div class="wiz-bar" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1"><i id="wizBar"></i></div>
+          <span class="wiz-count"><b id="wizNow">1</b> / 4</span>
         </div>
-        <div class="f">
-          <label for="f-type" data-i18n="f.type">Cleaning type <em>*</em></label>
-          <select id="f-type" name="type" required aria-describedby="e-type">
-            <option value="" data-i18n="f.choose">Choose…</option>
-            <option value="regular" data-i18n="svc.1.t">Regular home cleaning</option>
-            <option value="deep" data-i18n="svc.2.t">Deep cleaning</option>
-            <option value="movein" data-i18n="svc.3.t">Move-in cleaning</option>
-            <option value="moveout" data-i18n="svc.4.t">Move-out cleaning</option>
-            <option value="renovation" data-i18n="svc.5.t">Post-renovation cleaning</option>
-            <option value="windows" data-i18n="svc.6.t">Window &amp; glass cleaning</option>
-            <option value="upholstery" data-i18n="svc.7.t">Upholstery cleaning</option>
-            <option value="carpet" data-i18n="svc.8.t">Carpet &amp; rug cleaning</option>
-            <option value="curtains" data-i18n="svc.9.t">Curtains &amp; blinds</option>
-            <option value="other" data-i18n="f.other">Not sure yet</option>
-          </select>
-          <p class="err" id="e-type" hidden></p>
+
+        <!-- STEP 1 -->
+        <div class="wiz-step is-on" data-step="1">
+          <p class="wiz-q" data-i18n="w.q1">What are we cleaning?</p>
+          <div class="pick" role="group" data-field="prop">
+            <button type="button" class="pk" data-val="apartment">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V6l7-3v18M11 21h9V10l-9-4M7 9v0M7 13v0M7 17v0M15 12v0M15 16v0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              <span data-i18n="prop.1">Apartment</span>
+            </button>
+            <button type="button" class="pk" data-val="serviced">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5M10 11h4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="prop.2">Serviced Apartment</span>
+            </button>
+            <button type="button" class="pk" data-val="penthouse">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V11l8-6 8 6v10M4 21h16M9 21v-6h6v6M8 3h8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="prop.3">Penthouse</span>
+            </button>
+            <button type="button" class="pk" data-val="townhouse">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l4.5-4L12 10v11M12 21V10l4.5-4L21 10v11M3 21h18M6 21v-4h3v4M15 21v-4h3v4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="prop.4">Townhouse</span>
+            </button>
+            <button type="button" class="pk" data-val="villa">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12l10-8 10 8M5 10v11h14V10M9 21v-6h6v6M2 21h20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="prop.5">Villa</span>
+            </button>
+            <button type="button" class="pk" data-val="other">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 7v11H3V10l9-7M12 12v0M9 16h6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="prop.6">Other Property</span>
+            </button>
+          </div>
+          <p class="err" data-err="prop" hidden></p>
+
+          <div class="steps-row">
+            <div class="stp" data-field="beds">
+              <span class="stp-k" data-i18n="w.beds">Bedrooms</span>
+              <div class="stp-c">
+                <button type="button" class="stp-b" data-d="-1" aria-label="minus">−</button>
+                <b class="stp-v">1</b>
+                <button type="button" class="stp-b" data-d="1" aria-label="plus">+</button>
+              </div>
+            </div>
+            <div class="stp" data-field="baths">
+              <span class="stp-k" data-i18n="w.baths">Bathrooms</span>
+              <div class="stp-c">
+                <button type="button" class="stp-b" data-d="-1" aria-label="minus">−</button>
+                <b class="stp-v">1</b>
+                <button type="button" class="stp-b" data-d="1" aria-label="plus">+</button>
+              </div>
+            </div>
+          </div>
+          <p class="wiz-hint" data-i18n="w.studio">Studio? Leave bedrooms at 0.</p>
         </div>
+
+        <!-- STEP 2 -->
+        <div class="wiz-step" data-step="2" hidden>
+          <p class="wiz-q" data-i18n="w.q2">What kind of cleaning?</p>
+          <div class="pick pick-2" role="group" data-field="type">
+            <button type="button" class="pk pk-w" data-val="regular"><span data-i18n="svc.1.t">Regular home cleaning</span><em data-i18n="w.t1">Keeps it in order on a schedule</em></button>
+            <button type="button" class="pk pk-w" data-val="deep"><span data-i18n="svc.2.t">Deep cleaning</span><em data-i18n="w.t2">Everything, including what’s usually missed</em></button>
+            <button type="button" class="pk pk-w" data-val="movein"><span data-i18n="svc.3.t">Move-in cleaning</span><em data-i18n="w.t3">Before you take the keys</em></button>
+            <button type="button" class="pk pk-w" data-val="moveout"><span data-i18n="svc.4.t">Move-out cleaning</span><em data-i18n="w.t4">Handing the property back</em></button>
+            <button type="button" class="pk pk-w" data-val="renovation"><span data-i18n="svc.5.t">Post-renovation cleaning</span><em data-i18n="w.t5">Construction dust and residue</em></button>
+            <button type="button" class="pk pk-w" data-val="other"><span data-i18n="w.tother">Not sure yet</span><em data-i18n="w.t6">We’ll advise once we see it</em></button>
+          </div>
+          <p class="err" data-err="type" hidden></p>
+
+          <div class="freq" id="freqBox" hidden>
+            <span class="wiz-sub" data-i18n="w.freq">How often?</span>
+            <div class="seg" role="group" data-field="freq">
+              <button type="button" class="sg is-on" data-val="once" data-i18n="w.f1">One-off</button>
+              <button type="button" class="sg" data-val="weekly" data-i18n="w.f2">Weekly</button>
+              <button type="button" class="sg" data-val="fortnightly" data-i18n="w.f3">Every 2 weeks</button>
+              <button type="button" class="sg" data-val="monthly" data-i18n="w.f4">Monthly</button>
+            </div>
+            <p class="freq-note" id="freqNote" hidden>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l2.4 5 5.6.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.6-.8z" fill="currentColor"/></svg>
+              <span data-i18n="w.fnote">Regular clients get promotional rates and bonuses — we’ll include them in your estimate.</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="wiz-step" data-step="3" hidden>
+          <p class="wiz-q" data-i18n="w.q3">Anything extra?</p>
+          <p class="wiz-sub2" data-i18n="w.q3s">Optional — tap what applies.</p>
+          <div class="chips" role="group" data-field="extras">
+            <button type="button" class="ch" data-val="windows" data-i18n="w.e1">Windows &amp; glass</button>
+            <button type="button" class="ch" data-val="carpets" data-i18n="w.e2">Carpets &amp; rugs</button>
+            <button type="button" class="ch" data-val="upholstery" data-i18n="w.e3">Sofas &amp; mattresses</button>
+            <button type="button" class="ch" data-val="curtains" data-i18n="w.e4">Curtains &amp; blinds</button>
+            <button type="button" class="ch" data-val="balcony" data-i18n="w.e5">Balcony / terrace</button>
+            <button type="button" class="ch" data-val="cupboards" data-i18n="w.e6">Inside cupboards</button>
+            <button type="button" class="ch" data-val="appliances" data-i18n="w.e7">Inside fridge &amp; oven</button>
+            <button type="button" class="ch" data-val="pets" data-i18n="w.e8">Pets at home</button>
+          </div>
+
+          <span class="wiz-sub" data-i18n="w.when">When?</span>
+          <div class="chips" role="group" data-field="when">
+            <button type="button" class="ch ch-r" data-val="asap" data-i18n="w.w1">As soon as possible</button>
+            <button type="button" class="ch ch-r" data-val="week" data-i18n="w.w2">This week</button>
+            <button type="button" class="ch ch-r" data-val="flexible" data-i18n="w.w3">I’m flexible</button>
+            <button type="button" class="ch ch-r" data-val="date" data-i18n="w.w4">Pick a date</button>
+          </div>
+          <div class="f f-date" id="dateBox" hidden>
+            <label for="f-date" data-i18n="f.date">Preferred date</label>
+            <input type="date" id="f-date" name="date">
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="wiz-step" data-step="4" hidden>
+          <p class="wiz-q" data-i18n="w.q4">Where, and how do we reach you?</p>
+          <span class="wiz-sub" data-i18n="w.area">Area in Dubai</span>
+          <div class="chips" role="group" data-field="loc">
+            <button type="button" class="ch ch-r" data-val="Dubai Marina">Dubai Marina</button>
+            <button type="button" class="ch ch-r" data-val="JVC">JVC</button>
+            <button type="button" class="ch ch-r" data-val="Downtown">Downtown</button>
+            <button type="button" class="ch ch-r" data-val="Business Bay">Business Bay</button>
+            <button type="button" class="ch ch-r" data-val="Palm Jumeirah">Palm Jumeirah</button>
+            <button type="button" class="ch ch-r" data-val="JLT">JLT</button>
+            <button type="button" class="ch ch-r" data-val="Arabian Ranches">Arabian Ranches</button>
+            <button type="button" class="ch ch-r" data-val="__other" data-i18n="w.locother">Another area</button>
+          </div>
+          <div class="f f-loc" id="locBox" hidden>
+            <input type="text" id="f-loc" name="loc" data-i18n-ph="w.locph" placeholder="Type your community">
+          </div>
+          <p class="err" data-err="loc" hidden></p>
+
+          <div class="fr fr-2 fr-top">
+            <div class="f">
+              <label for="f-name" data-i18n="f.name">Name <em>*</em></label>
+              <input type="text" id="f-name" name="name" required autocomplete="given-name" aria-describedby="e-name">
+              <p class="err" id="e-name" hidden></p>
+            </div>
+            <div class="f">
+              <label for="f-phone" data-i18n="f.phone">Phone / WhatsApp <em>*</em></label>
+              <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder="+971 5X XXX XXXX" aria-describedby="e-phone">
+              <p class="err" id="e-phone" hidden></p>
+            </div>
+          </div>
+
+          <div class="f">
+            <label for="f-note" data-i18n="w.note">Anything we should know? <span class="opt">(optional)</span></label>
+            <textarea id="f-note" name="note" rows="2" data-i18n-ph="f.notePh" placeholder="Access, problem areas, timing"></textarea>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" id="f-media" name="media">
+            <span data-i18n="f.media">I can send photos or a video of the property</span>
+          </label>
+        </div>
+
+        <!-- NAV -->
+        <div class="wiz-nav">
+          <button type="button" class="btn btn-ghost" id="wizBack" hidden><span data-i18n="w.back">Back</span></button>
+          <button type="button" class="btn btn-y btn-lg" id="wizNext"><span data-i18n="w.next">Continue</span><svg class="arr" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <button type="submit" class="btn btn-y btn-lg" id="wizSend" hidden>
+            <svg class="wa-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 1 1 6.99 3.86Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+            <span data-i18n="w.send">Send via WhatsApp</span>
+          </button>
+        </div>
+        <p class="form-ok" id="formOk" role="status" hidden></p>
       </div>
 
-      <div class="fr fr-2">
-        <div class="f">
-          <label for="f-beds" data-i18n="f.beds">Number of bedrooms</label>
-          <select id="f-beds" name="beds">
-            <option value="" data-i18n="f.choose">Choose…</option>
-            <option value="Studio">Studio</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5+">5+</option>
-          </select>
+      <!-- LIVE SUMMARY -->
+      <aside class="wiz-sum" aria-live="polite">
+        <span class="fc-k" data-i18n="w.sum">Your request</span>
+        <ul class="sum-list" id="sumList"></ul>
+        <p class="sum-empty" id="sumEmpty" data-i18n="w.sumempty">Your choices will appear here as you go.</p>
+        <div class="sum-foot">
+          <p data-i18n="w.sumnote">We confirm the scope and the price before anyone arrives. The estimate and the visit are free.</p>
+          <a href="tel:+971586997277" class="sum-call"><span data-i18n="est.call">Call</span><b>+971 58 699 7277</b></a>
         </div>
-        <div class="f">
-          <label for="f-area" data-i18n="f.area">Approximate area, m²</label>
-          <input type="number" id="f-area" name="area" min="1" max="5000" inputmode="numeric" placeholder="120">
-        </div>
-      </div>
-
-      <div class="fr fr-2">
-        <div class="f">
-          <label for="f-loc" data-i18n="f.loc">Community or location in Dubai <em>*</em></label>
-          <input type="text" id="f-loc" name="loc" required autocomplete="address-level3" placeholder="Dubai Marina, JVC, Palm Jumeirah…" aria-describedby="e-loc">
-          <p class="err" id="e-loc" hidden></p>
-        </div>
-        <div class="f">
-          <label for="f-date" data-i18n="f.date">Preferred date</label>
-          <input type="date" id="f-date" name="date">
-        </div>
-      </div>
-
-      <div class="fr fr-2">
-        <div class="f">
-          <label for="f-name" data-i18n="f.name">Name <em>*</em></label>
-          <input type="text" id="f-name" name="name" required autocomplete="name" aria-describedby="e-name">
-          <p class="err" id="e-name" hidden></p>
-        </div>
-        <div class="f">
-          <label for="f-phone" data-i18n="f.phone">Phone / WhatsApp <em>*</em></label>
-          <input type="tel" id="f-phone" name="phone" required autocomplete="tel" placeholder="+971 5X XXX XXXX" aria-describedby="e-phone">
-          <p class="err" id="e-phone" hidden></p>
-        </div>
-      </div>
-
-      <div class="f">
-        <label for="f-mail" data-i18n="f.mail">Email <span class="opt" data-i18n="f.opt">(optional)</span></label>
-        <input type="email" id="f-mail" name="mail" autocomplete="email" aria-describedby="e-mail">
-        <p class="err" id="e-mail" hidden></p>
-      </div>
-
-      <div class="f">
-        <label for="f-note" data-i18n="f.note">Comment</label>
-        <textarea id="f-note" name="note" rows="3" data-i18n-ph="f.notePh" placeholder="Anything we should know — pets, access, problem areas, timing"></textarea>
-      </div>
-
-      <label class="check">
-        <input type="checkbox" id="f-media" name="media">
-        <span data-i18n="f.media">I can send photos or a video of the property</span>
-      </label>
-
-      <button type="submit" class="btn btn-y btn-lg btn-full">
-        <svg class="wa-i" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 1 1 6.99 3.86Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
-        <span data-i18n="f.submit">Send via WhatsApp</span>
-      </button>
-      <p class="form-note" data-i18n="f.foot">Your details are used only to prepare an estimate. The form opens WhatsApp with your message ready to send.</p>
-      <p class="form-ok" id="formOk" role="status" hidden data-i18n="f.ok">WhatsApp is opening with your details. If nothing happened, message us on +971 58 699 7277.</p>
+      </aside>
     </form>
   </div>
 </section>

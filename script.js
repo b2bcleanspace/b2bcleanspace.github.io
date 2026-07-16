@@ -225,11 +225,64 @@
       'ab.6': 'Result handed over to you or to the person you nominate',
 
       'est.eyebrow': 'Estimate',
-      'est.h2': 'Get your cleaning estimate',
-      'est.lead': 'Fill in what you know. The form builds a structured message and opens WhatsApp — nothing is sent anywhere else.',
-      'est.p1': 'Assessment and estimate are free',
-      'est.p2': 'Scope and price fixed before work begins',
-      'est.p3': 'We reply between 7:00 and 22:00, seven days a week',
+      'est.h2': 'Tell us about your property',
+      'est.lead': 'Four quick steps, almost no typing. We come back with a scope and a figure — the estimate is free and nothing is charged until you approve it.',
+
+      'w.q1': 'What are we cleaning?',
+      'w.beds': 'Bedrooms',
+      'w.baths': 'Bathrooms',
+      'w.studio': 'Studio? Leave bedrooms at 0.',
+      'w.studio2': 'Studio',
+      'w.q2': 'What kind of cleaning?',
+      'w.t1': 'Keeps it in order on a schedule',
+      'w.t2': 'Everything, including what\u2019s usually missed',
+      'w.t3': 'Before you take the keys',
+      'w.t4': 'Handing the property back',
+      'w.t5': 'Construction dust and residue',
+      'w.t6': 'We\u2019ll advise once we see it',
+      'w.tother': 'Not sure yet',
+      'w.freq': 'How often?',
+      'w.f1': 'One-off',
+      'w.f2': 'Weekly',
+      'w.f3': 'Every 2 weeks',
+      'w.f4': 'Monthly',
+      'w.fnote': 'Regular clients get promotional rates and bonuses \u2014 we\u2019ll include them in your estimate.',
+      'w.q3': 'Anything extra?',
+      'w.q3s': 'Optional \u2014 tap what applies.',
+      'w.e1': 'Windows & glass',
+      'w.e2': 'Carpets & rugs',
+      'w.e3': 'Sofas & mattresses',
+      'w.e4': 'Curtains & blinds',
+      'w.e5': 'Balcony / terrace',
+      'w.e6': 'Inside cupboards',
+      'w.e7': 'Inside fridge & oven',
+      'w.e8': 'Pets at home',
+      'w.when': 'When?',
+      'w.w1': 'As soon as possible',
+      'w.w2': 'This week',
+      'w.w3': 'I\u2019m flexible',
+      'w.w4': 'Pick a date',
+      'w.q4': 'Where, and how do we reach you?',
+      'w.area': 'Area in Dubai',
+      'w.locother': 'Another area',
+      'w.locph': 'Type your community',
+      'w.note': 'Anything we should know? <span class="opt">(optional)</span>',
+      'w.back': 'Back',
+      'w.next': 'Continue',
+      'w.send': 'Send via WhatsApp',
+      'w.sum': 'Your request',
+      'w.sumempty': 'Your choices will appear here as you go.',
+      'w.sumnote': 'We confirm the scope and the price before anyone arrives. The estimate and the visit are free.',
+      'w.pbeds': ['bedroom', 'bedrooms'],
+      'w.pbaths': ['bathroom', 'bathrooms'],
+      'w.sfreq': 'Frequency',
+      'w.sprop': 'Property',
+      'w.ssize': 'Size',
+      'w.stype': 'Service',
+      'w.sextras': 'Extras',
+      'w.swhen': 'Timing',
+      'w.sloc': 'Location',
+      'err.pick': 'Please choose one option',
       'est.call': 'Call',
       'est.email': 'Email',
 
@@ -518,14 +571,67 @@
       'ab.5': 'Подготовка объекта к заселению, новой аренде или показу',
       'ab.6': 'Передача результата вам или назначенному вами человеку',
 
-      'est.eyebrow': 'Расчёт',
-      'est.h2': 'Получите расчёт уборки',
-      'est.lead': 'Заполните то, что знаете. Форма соберёт структурированное сообщение и откроет WhatsApp — больше данные никуда не уходят.',
-      'est.p1': 'Осмотр и расчёт — бесплатно',
-      'est.p2': 'Объём и цена фиксируются до начала работ',
-      'est.p3': 'Отвечаем с 7:00 до 22:00, без выходных',
-      'est.call': 'Позвонить',
-      'est.email': 'Почта',
+      'est.eyebrow': '\u0420\u0430\u0441\u0447\u0451\u0442',
+      'est.h2': '\u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u043e\u0431 \u043e\u0431\u044a\u0435\u043a\u0442\u0435',
+      'est.lead': '\u0427\u0435\u0442\u044b\u0440\u0435 \u0448\u0430\u0433\u0430, \u043f\u043e\u0447\u0442\u0438 \u0431\u0435\u0437 \u0432\u0432\u043e\u0434\u0430 \u0441 \u043a\u043b\u0430\u0432\u0438\u0430\u0442\u0443\u0440\u044b. \u041c\u044b \u0432\u0435\u0440\u043d\u0451\u043c\u0441\u044f \u0441 \u043e\u0431\u044a\u0451\u043c\u043e\u043c \u0438 \u0441\u0443\u043c\u043c\u043e\u0439 \u2014 \u0440\u0430\u0441\u0447\u0451\u0442 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0439, \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u0441\u043f\u0438\u0448\u0435\u0442\u0441\u044f \u0434\u043e \u0432\u0430\u0448\u0435\u0433\u043e \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u044f.',
+
+      'w.q1': '\u0427\u0442\u043e \u0443\u0431\u0438\u0440\u0430\u0435\u043c?',
+      'w.beds': '\u0421\u043f\u0430\u043b\u044c\u043d\u0438',
+      'w.baths': '\u0421\u0430\u043d\u0443\u0437\u043b\u044b',
+      'w.studio': '\u0421\u0442\u0443\u0434\u0438\u044f? \u041e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u0441\u043f\u0430\u043b\u044c\u043d\u0438 \u043d\u0430 0.',
+      'w.studio2': '\u0421\u0442\u0443\u0434\u0438\u044f',
+      'w.q2': '\u041a\u0430\u043a\u0430\u044f \u043d\u0443\u0436\u043d\u0430 \u0443\u0431\u043e\u0440\u043a\u0430?',
+      'w.t1': '\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u043f\u043e\u0440\u044f\u0434\u043e\u043a \u043f\u043e \u0433\u0440\u0430\u0444\u0438\u043a\u0443',
+      'w.t2': '\u0412\u0441\u0451, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u0442\u043e, \u0434\u043e \u0447\u0435\u0433\u043e \u043e\u0431\u044b\u0447\u043d\u043e \u043d\u0435 \u0434\u043e\u0445\u043e\u0434\u044f\u0442 \u0440\u0443\u043a\u0438',
+      'w.t3': '\u0414\u043e \u0442\u043e\u0433\u043e, \u043a\u0430\u043a \u0432\u044b \u0437\u0430\u0431\u0440\u0430\u043b\u0438 \u043a\u043b\u044e\u0447\u0438',
+      'w.t4': '\u0421\u0434\u0430\u0451\u0442\u0435 \u043e\u0431\u044a\u0435\u043a\u0442',
+      'w.t5': '\u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u044b\u043b\u044c \u0438 \u0441\u043b\u0435\u0434\u044b \u0440\u0435\u043c\u043e\u043d\u0442\u0430',
+      'w.t6': '\u041f\u043e\u0434\u0441\u043a\u0430\u0436\u0435\u043c, \u043a\u043e\u0433\u0434\u0430 \u0443\u0432\u0438\u0434\u0438\u043c \u043e\u0431\u044a\u0435\u043a\u0442',
+      'w.tother': '\u041f\u043e\u043a\u0430 \u043d\u0435 \u0437\u043d\u0430\u044e',
+      'w.freq': '\u041a\u0430\u043a \u0447\u0430\u0441\u0442\u043e?',
+      'w.f1': '\u0420\u0430\u0437\u043e\u0432\u043e',
+      'w.f2': '\u0420\u0430\u0437 \u0432 \u043d\u0435\u0434\u0435\u043b\u044e',
+      'w.f3': '\u0420\u0430\u0437 \u0432 2 \u043d\u0435\u0434\u0435\u043b\u0438',
+      'w.f4': '\u0420\u0430\u0437 \u0432 \u043c\u0435\u0441\u044f\u0446',
+      'w.fnote': '\u0414\u043b\u044f \u043f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u044b\u0445 \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u0432 \u0435\u0441\u0442\u044c \u043f\u0440\u043e\u043c\u043e\u0430\u043a\u0446\u0438\u0438 \u0438 \u0431\u043e\u043d\u0443\u0441\u044b \u2014 \u0443\u0447\u0442\u0451\u043c \u0438\u0445 \u0432 \u0440\u0430\u0441\u0447\u0451\u0442\u0435.',
+      'w.q3': '\u0427\u0442\u043e-\u0442\u043e \u0435\u0449\u0451?',
+      'w.q3s': '\u041d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u2014 \u043e\u0442\u043c\u0435\u0442\u044c\u0442\u0435, \u0447\u0442\u043e \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442.',
+      'w.e1': '\u041e\u043a\u043d\u0430 \u0438 \u0441\u0442\u0435\u043a\u043b\u043e',
+      'w.e2': '\u041a\u043e\u0432\u0440\u044b',
+      'w.e3': '\u0414\u0438\u0432\u0430\u043d\u044b \u0438 \u043c\u0430\u0442\u0440\u0430\u0441\u044b',
+      'w.e4': '\u0428\u0442\u043e\u0440\u044b \u0438 \u0436\u0430\u043b\u044e\u0437\u0438',
+      'w.e5': '\u0411\u0430\u043b\u043a\u043e\u043d / \u0442\u0435\u0440\u0440\u0430\u0441\u0430',
+      'w.e6': '\u0412\u043d\u0443\u0442\u0440\u0438 \u0448\u043a\u0430\u0444\u043e\u0432',
+      'w.e7': '\u0412\u043d\u0443\u0442\u0440\u0438 \u0445\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0430 \u0438 \u0434\u0443\u0445\u043e\u0432\u043a\u0438',
+      'w.e8': '\u0414\u043e\u043c\u0430 \u0435\u0441\u0442\u044c \u0436\u0438\u0432\u043e\u0442\u043d\u044b\u0435',
+      'w.when': '\u041a\u043e\u0433\u0434\u0430?',
+      'w.w1': '\u041a\u0430\u043a \u043c\u043e\u0436\u043d\u043e \u0441\u043a\u043e\u0440\u0435\u0435',
+      'w.w2': '\u041d\u0430 \u044d\u0442\u043e\u0439 \u043d\u0435\u0434\u0435\u043b\u0435',
+      'w.w3': '\u042f \u043d\u0435 \u0442\u043e\u0440\u043e\u043f\u043b\u044e\u0441\u044c',
+      'w.w4': '\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u0434\u0430\u0442\u0443',
+      'w.q4': '\u0413\u0434\u0435 \u043e\u0431\u044a\u0435\u043a\u0442 \u0438 \u043a\u0430\u043a \u0441 \u0432\u0430\u043c\u0438 \u0441\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f?',
+      'w.area': '\u0420\u0430\u0439\u043e\u043d \u0432 \u0414\u0443\u0431\u0430\u0435',
+      'w.locother': '\u0414\u0440\u0443\u0433\u043e\u0439 \u0440\u0430\u0439\u043e\u043d',
+      'w.locph': '\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u0440\u0430\u0439\u043e\u043d',
+      'w.note': '\u0427\u0442\u043e \u043d\u0430\u043c \u0441\u0442\u043e\u0438\u0442 \u0437\u043d\u0430\u0442\u044c? <span class="opt">(\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)</span>',
+      'w.back': '\u041d\u0430\u0437\u0430\u0434',
+      'w.next': '\u0414\u0430\u043b\u0435\u0435',
+      'w.send': '\u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u0432 WhatsApp',
+      'w.sum': '\u0412\u0430\u0448\u0430 \u0437\u0430\u044f\u0432\u043a\u0430',
+      'w.sumempty': '\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u044f\u0432\u0438\u0442\u0441\u044f \u0442\u043e, \u0447\u0442\u043e \u0432\u044b \u0432\u044b\u0431\u0435\u0440\u0435\u0442\u0435.',
+      'w.sumnote': '\u041e\u0431\u044a\u0451\u043c \u0438 \u0446\u0435\u043d\u0443 \u0441\u043e\u0433\u043b\u0430\u0441\u0443\u0435\u043c \u0434\u043e \u0432\u044b\u0435\u0437\u0434\u0430. \u0420\u0430\u0441\u0447\u0451\u0442 \u0438 \u043e\u0441\u043c\u043e\u0442\u0440 \u2014 \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e.',
+      'w.pbeds': ['\u0441\u043f\u0430\u043b\u044c\u043d\u044f', '\u0441\u043f\u0430\u043b\u044c\u043d\u0438', '\u0441\u043f\u0430\u043b\u0435\u043d'],
+      'w.pbaths': ['\u0441\u0430\u043d\u0443\u0437\u0435\u043b', '\u0441\u0430\u043d\u0443\u0437\u043b\u0430', '\u0441\u0430\u043d\u0443\u0437\u043b\u043e\u0432'],
+      'w.sfreq': '\u0427\u0430\u0441\u0442\u043e\u0442\u0430',
+      'w.sprop': '\u041e\u0431\u044a\u0435\u043a\u0442',
+      'w.ssize': '\u0420\u0430\u0437\u043c\u0435\u0440',
+      'w.stype': '\u0423\u0441\u043b\u0443\u0433\u0430',
+      'w.sextras': '\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e',
+      'w.swhen': '\u0421\u0440\u043e\u043a\u0438',
+      'w.sloc': '\u0420\u0430\u0439\u043e\u043d',
+      'err.pick': '\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043e\u0434\u0438\u043d \u0432\u0430\u0440\u0438\u0430\u043d\u0442',
+      'est.call': '\u041f\u043e\u0437\u0432\u043e\u043d\u0438\u0442\u044c',
+      'est.email': '\u041f\u043e\u0447\u0442\u0430',
 
       'f.prop': 'Тип объекта <em>*</em>',
       'f.type': 'Тип уборки <em>*</em>',
@@ -746,127 +852,267 @@
   });
 
   /* ==================================================================
-     6. PROPERTY PICKER  →  FORM
-     ================================================================== */
-  var fProp = $('#f-prop');
-  var fType = $('#f-type');
-
-  $$('.prop-b').forEach(function (b) {
-    b.addEventListener('click', function () {
-      var v = b.getAttribute('data-prop');
-      $$('.prop-b').forEach(function (o) { o.classList.toggle('is-on', o === b); });
-      if (fProp) { fProp.value = v; clearErr(fProp); }
-      document.getElementById('estimate').scrollIntoView({
-        behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth',
-        block: 'start'
-      });
-      setTimeout(function () { if (fType) fType.focus({ preventScroll: true }); }, 500);
-    });
-  });
-
-  // service card → cleaning type
-  $$('.lnk[data-svc]').forEach(function (a) {
-    a.addEventListener('click', function () {
-      if (fType) { fType.value = a.getAttribute('data-svc'); clearErr(fType); }
-    });
-  });
-
-  /* ==================================================================
-     7. FORM VALIDATION + WHATSAPP MESSAGE
+     6. ESTIMATE — STEP-BY-STEP PICKER
      ================================================================== */
   var form = $('#estForm');
   var okMsg = $('#formOk');
+  var STEPS = 4;
+  var step = 1;
 
+  // collected answers
+  var A = { prop: '', beds: 1, baths: 1, type: '', freq: 'once', extras: [], when: '', loc: '' };
+
+  /* ---- generic pick groups (single choice) ---- */
+  function pickGroup(sel, field, after) {
+    $$(sel + ' .pk, ' + sel + ' .ch-r, ' + sel + ' .sg').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var grp = b.closest('[data-field]');
+        $$('.pk, .ch-r, .sg', grp).forEach(function (o) { o.classList.toggle('is-on', o === b); });
+        A[field] = b.getAttribute('data-val');
+        clearGroupErr(field);
+        renderSummary();
+        if (after) after(b.getAttribute('data-val'));
+      });
+    });
+  }
+
+  pickGroup('[data-field="prop"]', 'prop');
+  pickGroup('[data-field="type"]', 'type', function (v) {
+    // frequency only makes sense for recurring cleaning
+    var box = $('#freqBox');
+    var show = v === 'regular';
+    box.hidden = !show;
+    if (!show) { A.freq = 'once'; $$('#freqBox .sg').forEach(function (s, i) { s.classList.toggle('is-on', i === 0); }); $('#freqNote').hidden = true; }
+    renderSummary();
+  });
+  pickGroup('[data-field="freq"]', 'freq', function (v) {
+    $('#freqNote').hidden = (v === 'once');
+    renderSummary();
+  });
+  pickGroup('[data-field="when"]', 'when', function (v) {
+    $('#dateBox').hidden = (v !== 'date');
+    if (v !== 'date') $('#f-date').value = '';
+    renderSummary();
+  });
+  pickGroup('[data-field="loc"]', 'loc', function (v) {
+    var box = $('#locBox');
+    box.hidden = (v !== '__other');
+    if (v === '__other') { $('#f-loc').value = ''; setTimeout(function () { $('#f-loc').focus(); }, 60); }
+    renderSummary();
+  });
+  $('#f-loc').addEventListener('input', function () { clearGroupErr('loc'); renderSummary(); });
+  $('#f-date').addEventListener('change', renderSummary);
+
+  /* ---- multi-choice chips (extras) ---- */
+  $$('[data-field="extras"] .ch').forEach(function (c) {
+    c.addEventListener('click', function () {
+      c.classList.toggle('is-on');
+      var v = c.getAttribute('data-val');
+      var i = A.extras.indexOf(v);
+      if (i > -1) A.extras.splice(i, 1); else A.extras.push(v);
+      renderSummary();
+    });
+  });
+
+  /* ---- steppers ---- */
+  $$('.stp').forEach(function (s) {
+    var field = s.getAttribute('data-field');
+    var val = s.querySelector('.stp-v');
+    var min = field === 'beds' ? 0 : 1;
+    var max = 10;
+    function sync() {
+      val.textContent = A[field];
+      s.querySelector('[data-d="-1"]').disabled = A[field] <= min;
+      s.querySelector('[data-d="1"]').disabled = A[field] >= max;
+    }
+    $$('.stp-b', s).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var d = parseInt(b.getAttribute('data-d'), 10);
+        var next = Math.min(max, Math.max(min, A[field] + d));
+        if (next === A[field]) return;
+        A[field] = next;
+        sync();
+        val.classList.remove('bump');
+        void val.offsetWidth;
+        val.classList.add('bump');
+        renderSummary();
+      });
+    });
+    sync();
+  });
+
+  /* ---- summary ---- */
+  function label(field, val) {
+    var map = {
+      prop: { apartment: 'prop.1', serviced: 'prop.2', penthouse: 'prop.3', townhouse: 'prop.4', villa: 'prop.5', other: 'prop.6' },
+      type: { regular: 'svc.1.t', deep: 'svc.2.t', movein: 'svc.3.t', moveout: 'svc.4.t', renovation: 'svc.5.t', other: 'w.tother' },
+      freq: { once: 'w.f1', weekly: 'w.f2', fortnightly: 'w.f3', monthly: 'w.f4' },
+      when: { asap: 'w.w1', week: 'w.w2', flexible: 'w.w3', date: 'w.w4' },
+      extras: { windows: 'w.e1', carpets: 'w.e2', upholstery: 'w.e3', curtains: 'w.e4', balcony: 'w.e5', cupboards: 'w.e6', appliances: 'w.e7', pets: 'w.e8' }
+    };
+    var k = map[field] && map[field][val];
+    return k ? t(k).replace(/&amp;/g, '&') : val;
+  }
+
+  function locValue() {
+    if (A.loc === '__other') return $('#f-loc').value.trim();
+    return A.loc;
+  }
+
+  // "2 bedrooms" / "2 спальни" — plural-aware, no clunky "2 × Bedrooms"
+  function plural(n, key) {
+    var forms = t(key); // array: [one, few, many]
+    if (!Array.isArray(forms)) return n + ' ' + forms;
+    var i;
+    if (lang === 'ru') {
+      var n10 = n % 10, n100 = n % 100;
+      i = (n10 === 1 && n100 !== 11) ? 0
+        : (n10 >= 2 && n10 <= 4 && (n100 < 12 || n100 > 14)) ? 1
+        : 2;
+    } else {
+      i = n === 1 ? 0 : 1;
+    }
+    // never render "undefined" if a dictionary has fewer forms than expected
+    var f = forms[i] || forms[forms.length - 1];
+    return n + ' ' + f;
+  }
+
+  function renderSummary() {
+    var ul = $('#sumList');
+    var rows = [];
+    if (A.prop) rows.push([t('w.sprop'), label('prop', A.prop)]);
+    if (A.prop) {
+      var size = A.beds === 0 ? t('w.studio2') : plural(A.beds, 'w.pbeds');
+      rows.push([t('w.ssize'), size + ' · ' + plural(A.baths, 'w.pbaths')]);
+    }
+    if (A.type) {
+      var ty = label('type', A.type);
+      if (A.type === 'regular' && A.freq !== 'once') ty += ' · ' + label('freq', A.freq);
+      rows.push([t('w.stype'), ty]);
+    }
+    if (A.extras.length) rows.push([t('w.sextras'), A.extras.map(function (e) { return label('extras', e); }).join(', ')]);
+    if (A.when) {
+      var wv = label('when', A.when);
+      if (A.when === 'date' && $('#f-date').value) wv = $('#f-date').value;
+      rows.push([t('w.swhen'), wv]);
+    }
+    var lv = locValue();
+    if (lv) rows.push([t('w.sloc'), lv]);
+
+    ul.innerHTML = rows.map(function (r) {
+      var li = document.createElement('li');
+      var s = document.createElement('span'); s.textContent = r[0];
+      var b = document.createElement('b'); b.textContent = r[1];
+      li.appendChild(s); li.appendChild(b);
+      return li.outerHTML;
+    }).join('');
+    $('#sumEmpty').hidden = rows.length > 0;
+  }
+
+  /* ---- errors ---- */
+  function groupErr(field, msg) {
+    var e = $('.err[data-err="' + field + '"]');
+    if (!e) return;
+    e.textContent = msg; e.hidden = false;
+  }
+  function clearGroupErr(field) {
+    var e = $('.err[data-err="' + field + '"]');
+    if (e) { e.hidden = true; e.textContent = ''; }
+  }
+
+  /* ---- navigation ---- */
+  function showStep(n) {
+    step = n;
+    $$('.wiz-step').forEach(function (s) {
+      var on = parseInt(s.getAttribute('data-step'), 10) === n;
+      s.classList.toggle('is-on', on);
+      s.hidden = !on;
+    });
+    $('#wizBar').style.width = (n / STEPS * 100) + '%';
+    $('.wiz-bar').setAttribute('aria-valuenow', n);
+    $('#wizNow').textContent = n;
+    $('#wizBack').hidden = n === 1;
+    $('#wizNext').hidden = n === STEPS;
+    $('#wizSend').hidden = n !== STEPS;
+    var top = $('#estimate').getBoundingClientRect().top + window.scrollY - 90;
+    if (window.scrollY > top + 40 || window.scrollY < top - 400) {
+      window.scrollTo({ top: top, behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
+    }
+  }
+
+  function validateStep(n) {
+    if (n === 1 && !A.prop) { groupErr('prop', t('err.pick')); return false; }
+    if (n === 2 && !A.type) { groupErr('type', t('err.pick')); return false; }
+    return true;
+  }
+
+  $('#wizNext').addEventListener('click', function () {
+    if (!validateStep(step)) return;
+    if (step < STEPS) showStep(step + 1);
+  });
+  $('#wizBack').addEventListener('click', function () { if (step > 1) showStep(step - 1); });
+
+  /* ---- field validation (step 4 only) ---- */
   function fieldOf(el) { return el.closest('.f'); }
   function clearErr(el) {
-    var f = fieldOf(el);
-    if (!f) return;
+    var f = fieldOf(el); if (!f) return;
     f.classList.remove('is-bad');
     var e = f.querySelector('.err');
     if (e) { e.hidden = true; e.textContent = ''; }
     el.removeAttribute('aria-invalid');
   }
   function setErr(el, msg) {
-    var f = fieldOf(el);
-    if (!f) return;
+    var f = fieldOf(el); if (!f) return;
     f.classList.add('is-bad');
     var e = f.querySelector('.err');
     if (e) { e.textContent = msg; e.hidden = false; }
     el.setAttribute('aria-invalid', 'true');
   }
-
   function validate(el) {
     var v = (el.value || '').trim();
-    if (el.hasAttribute('required') && !v) {
-      setErr(el, el.tagName === 'SELECT' ? t('err.sel') : t('err.req'));
-      return false;
-    }
+    if (el.hasAttribute('required') && !v) { setErr(el, t('err.req')); return false; }
     if (el.type === 'tel' && v) {
-      var digits = v.replace(/\D/g, '');
-      if (digits.length < 7 || digits.length > 15) { setErr(el, t('err.phone')); return false; }
-    }
-    if (el.type === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) {
-      setErr(el, t('err.mail'));
-      return false;
+      var d = v.replace(/\D/g, '');
+      if (d.length < 7 || d.length > 15) { setErr(el, t('err.phone')); return false; }
     }
     clearErr(el);
     return true;
   }
-
-  $$('#estForm input, #estForm select, #estForm textarea').forEach(function (el) {
+  $$('#f-name, #f-phone').forEach(function (el) {
     el.addEventListener('blur', function () { if (el.value || el.hasAttribute('required')) validate(el); });
     el.addEventListener('input', function () { if (fieldOf(el) && fieldOf(el).classList.contains('is-bad')) validate(el); });
-    el.addEventListener('change', function () { if (fieldOf(el) && fieldOf(el).classList.contains('is-bad')) validate(el); });
   });
 
-  function labelFor(select) {
-    var o = select.options[select.selectedIndex];
-    return o && o.value ? o.textContent.trim() : '';
-  }
-
+  /* ---- WhatsApp message ---- */
   function buildMessage() {
     var L = [];
     L.push(t('wa.hello'));
     L.push('');
-    L.push(t('wa.prop') + ': ' + labelFor(fProp));
-    L.push(t('wa.type') + ': ' + labelFor(fType));
-
-    var beds = labelFor($('#f-beds'));
-    if (beds) L.push(t('wa.beds') + ': ' + beds);
-
-    var area = $('#f-area').value.trim();
-    if (area) L.push(t('wa.area') + ': ' + area + ' m²');
-
-    L.push(t('wa.loc') + ': ' + $('#f-loc').value.trim());
-
-    var date = $('#f-date').value;
-    if (date) L.push(t('wa.date') + ': ' + date);
-
+    L.push(t('wa.prop') + ': ' + label('prop', A.prop));
+    L.push(t('wa.beds') + ': ' + (A.beds === 0 ? t('w.studio2') : A.beds));
+    L.push(t('w.baths') + ': ' + A.baths);
+    L.push(t('wa.type') + ': ' + label('type', A.type));
+    if (A.type === 'regular' && A.freq !== 'once') L.push(t('w.sfreq') + ': ' + label('freq', A.freq));
+    if (A.extras.length) L.push(t('w.sextras') + ': ' + A.extras.map(function (e) { return label('extras', e); }).join(', '));
+    if (A.when) L.push(t('w.swhen') + ': ' + (A.when === 'date' && $('#f-date').value ? $('#f-date').value : label('when', A.when)));
+    var lv = locValue();
+    if (lv) L.push(t('wa.loc') + ': ' + lv);
     L.push(t('wa.name') + ': ' + $('#f-name').value.trim());
-
-    var mail = $('#f-mail').value.trim();
-    if (mail) L.push(t('wa.mail') + ': ' + mail);
-
     var note = $('#f-note').value.trim();
     if (note) L.push(t('wa.note') + ': ' + note);
-
     if ($('#f-media').checked) { L.push(''); L.push(t('wa.media')); }
-
     return L.join('\n');
   }
 
   function openWa(text) {
-    var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
-    window.open(url, '_blank', 'noopener');
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
   }
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    var fields = $$('#estForm [required], #estForm #f-mail');
     var bad = null;
-    fields.forEach(function (el) { if (!validate(el) && !bad) bad = el; });
+    $$('#f-name, #f-phone').forEach(function (el) { if (!validate(el) && !bad) bad = el; });
     if (bad) { bad.focus(); return; }
-
     openWa(buildMessage());
     okMsg.hidden = false;
     okMsg.textContent = t('f.ok');
@@ -874,11 +1120,34 @@
 
   // plain WhatsApp buttons (hero, final CTA, floating)
   $$('.js-wa').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      e.preventDefault();
-      openWa(t('wa.plain'));
+    a.addEventListener('click', function (e) { e.preventDefault(); openWa(t('wa.plain')); });
+  });
+
+  /* ---- property section feeds step 1 ---- */
+  $$('.prop-b').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var v = b.getAttribute('data-prop');
+      $$('.prop-b').forEach(function (o) { o.classList.toggle('is-on', o === b); });
+      var card = $('[data-field="prop"] .pk[data-val="' + v + '"]');
+      if (card) card.click();
+      showStep(1);
+      document.getElementById('estimate').scrollIntoView({
+        behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth', block: 'start'
+      });
     });
   });
+
+  /* ---- service cards feed step 2 ---- */
+  $$('.lnk[data-svc]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var v = a.getAttribute('data-svc');
+      var card = $('[data-field="type"] .pk[data-val="' + v + '"]');
+      if (card) { card.click(); setTimeout(function () { showStep(2); }, 300); }
+    });
+  });
+
+  renderSummary();
+  showStep(1);
 
   /* ==================================================================
      8. REVEAL ON SCROLL
