@@ -351,42 +351,41 @@ input,select,textarea{font:inherit;color:inherit}
 }
 .wiz-hint{margin-top:14px;font-size:12.5px;color:var(--c-ink-3)}
 
-/* pick cards */
-.pick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
-.pick-2{grid-template-columns:repeat(2,1fr)}
+/* pick cards — sized to match the calculator showroom: big, 2 across, soft corners */
+.pick{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
 .pk{
-  border:1px solid var(--c-line-2);background:#fff;border-radius:var(--r);
-  padding:18px 14px;display:flex;flex-direction:column;align-items:center;gap:10px;
-  text-align:center;font-size:13.5px;font-weight:700;color:var(--c-ink-2);line-height:1.3;
-  transition:border-color .18s,background .18s,transform .18s,box-shadow .18s;
+  border:2px solid var(--c-line);background:#fff;border-radius:14px;
+  padding:20px 14px;display:flex;flex-direction:column;align-items:center;gap:12px;
+  text-align:center;font-size:15px;font-weight:700;color:var(--c-ink-2);line-height:1.3;
+  min-height:104px;justify-content:center;
+  transition:border-color .18s,background .18s,transform .18s;
 }
-.pk svg{width:26px;height:26px;color:var(--c-graphite-2);transition:color .18s,transform .3s}
+.pk svg{width:30px;height:30px;color:var(--c-graphite-2);transition:color .18s,transform .3s}
 .pk:hover{border-color:var(--c-graphite-2);transform:translateY(-2px)}
 .pk:hover svg{transform:scale(1.08)}
-.pk.is-on{
-  border-color:var(--c-ink);background:var(--c-bg-warm);
-  box-shadow:inset 0 0 0 1px var(--c-ink);
-}
+.pk.is-on{border-color:var(--c-y-deep);background:var(--c-bg-warm)}
 .pk.is-on svg{color:var(--c-y-deep)}
-.pk-w{align-items:flex-start;text-align:left;gap:5px;padding:16px}
-.pk-w em{font-style:normal;font-size:12px;font-weight:500;color:var(--c-ink-3);line-height:1.4}
+.pk-w{align-items:flex-start;text-align:left;gap:6px;padding:18px 18px;min-height:88px;justify-content:center}
+.pk-w em{font-style:normal;font-size:13px;font-weight:500;color:var(--c-ink-3);line-height:1.4}
 
-/* steppers */
-.steps-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
-.stp{border:1px solid var(--c-line);background:var(--c-bg-warm);border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.stp-k{font-size:13.5px;font-weight:700;color:var(--c-ink-2)}
-.stp-c{display:flex;align-items:center;gap:4px;flex:none}
-.stp-b{
-  width:34px;height:34px;border-radius:50%;border:1px solid var(--c-line-2);background:#fff;
-  font-size:17px;font-weight:700;color:var(--c-ink);line-height:1;
-  display:grid;place-items:center;transition:background .15s,border-color .15s,transform .12s;
+/* steppers — 42px controls with 22px glyphs, straight from the showroom */
+.steps-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.stp{
+  border:2px solid var(--c-line);background:var(--c-bg-warm);border-radius:14px;
+  padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;
 }
-.stp-b:hover{border-color:var(--c-ink);background:var(--c-y)}
+.stp-k{font-size:15px;font-weight:700;color:var(--c-ink-2)}
+.stp-c{display:flex;align-items:center;gap:10px;flex:none}
+.stp-b{
+  width:42px;height:42px;border-radius:12px;border:0;background:var(--c-y);
+  font-size:22px;font-weight:800;color:var(--c-ink);line-height:1;
+  display:grid;place-items:center;transition:background .15s,transform .12s,opacity .15s;
+}
+.stp-b:hover{background:var(--c-y-warm)}
 .stp-b:active{transform:scale(.9)}
-.stp-b:disabled{opacity:.35;cursor:not-allowed}
-.stp-b:disabled:hover{background:#fff;border-color:var(--c-line-2)}
+.stp-b:disabled{background:var(--c-line);color:var(--c-ink-3);opacity:.6;cursor:not-allowed}
 .stp-v{
-  min-width:30px;text-align:center;font-family:var(--f-head);font-size:19px;font-weight:900;
+  min-width:32px;text-align:center;font-family:var(--f-head);font-size:24px;font-weight:900;
   color:var(--c-ink);font-variant-numeric:tabular-nums;
 }
 .stp-v.bump{animation:bump .3s ease}
@@ -395,10 +394,10 @@ input,select,textarea{font:inherit;color:inherit}
 /* segmented */
 .freq{margin-top:28px;padding-top:24px;border-top:1px solid var(--c-line)}
 .freq .wiz-sub{margin-top:0}
-.seg{display:inline-flex;background:var(--c-bg-soft);border:1px solid var(--c-line);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg{display:flex;background:var(--c-bg-soft);border-radius:12px;padding:4px;gap:4px;flex-wrap:wrap}
 .sg{
-  padding:9px 16px;border-radius:999px;font-size:13px;font-weight:700;color:var(--c-graphite);
-  transition:background .2s,color .2s;white-space:nowrap;
+  flex:1;padding:13px 16px;border-radius:9px;font-size:14.5px;font-weight:700;color:var(--c-graphite);
+  transition:background .2s,color .2s;white-space:nowrap;min-height:46px;
 }
 .sg:hover{color:var(--c-ink)}
 .sg.is-on{background:var(--c-ink);color:#fff}
@@ -410,16 +409,16 @@ input,select,textarea{font:inherit;color:inherit}
 .freq-note svg{width:15px;height:15px;flex:none}
 
 /* chips */
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .ch{
-  padding:10px 16px;border:1px solid var(--c-line-2);background:#fff;border-radius:999px;
-  font-size:13px;font-weight:600;color:var(--c-graphite);
+  padding:13px 20px;border:1.5px solid var(--c-line-2);background:#fff;border-radius:999px;
+  font-size:14.5px;font-weight:600;color:var(--c-graphite);min-height:48px;
   transition:border-color .18s,background .18s,color .18s,transform .12s;
 }
 .ch:hover{border-color:var(--c-ink);color:var(--c-ink)}
 .ch:active{transform:scale(.96)}
-.ch.is-on{background:var(--c-y);border-color:var(--c-y);color:var(--c-ink);font-weight:700}
-.ch.is-on::before{content:'✓';margin-right:7px;font-weight:900}
+.ch.is-on{background:var(--c-y);border-color:var(--c-y-deep);color:var(--c-ink);font-weight:700}
+.ch.is-on::before{content:'✓';margin-right:8px;font-weight:900}
 
 .f-date,.f-loc{margin-top:14px;max-width:280px;animation:wizIn .3s ease}
 .f-loc{max-width:340px}
@@ -458,9 +457,12 @@ input,select,textarea{font:inherit;color:inherit}
 .f label em{font-style:normal;color:var(--c-y-deep)}
 .f .opt{font-weight:500;color:var(--c-ink-3)}
 .f input,.f select,.f textarea{
-  width:100%;padding:12px 14px;border:1px solid var(--c-line-2);background:#fff;
-  border-radius:var(--r);font-size:14.5px;transition:border-color .2s,box-shadow .2s;
-  min-height:46px;
+  width:100%;padding:14px 16px;border:1.5px solid var(--c-line-2);background:#fff;
+  border-radius:12px;transition:border-color .2s,box-shadow .2s;
+  min-height:52px;
+  /* 16px is the floor: anything smaller and iOS Safari zooms the page on focus,
+     which reads to the user as the screen jumping and getting cut off. */
+  font-size:16px;
 }
 .f textarea{min-height:88px;resize:vertical;line-height:1.5}
 .f select{appearance:none;
@@ -546,6 +548,9 @@ input,select,textarea{font:inherit;color:inherit}
 }
 .wa-float svg{width:19px;height:19px;flex:none}
 .wa-float:hover{transform:translateY(-2px);background:var(--c-y-warm)}
+/* Inside the request form it would sit on top of the steppers and the
+   Continue button — and the form already ends in a WhatsApp send. */
+.wa-float.is-away{opacity:0;transform:translateY(12px) scale(.9);pointer-events:none}
 
 /* ---------- reveal on scroll ---------- */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
@@ -574,8 +579,10 @@ input,select,textarea{font:inherit;color:inherit}
   .hero-grid{grid-template-columns:1fr;gap:44px}
   .hero-media img{height:clamp(320px,52vw,460px)}
   .hero-badge{left:auto;right:16px;bottom:-16px}
+  /* Summary sits BELOW the form on narrow screens — the question must own the
+     first screen, not the dark recap panel. */
   .wiz{grid-template-columns:1fr}
-  .wiz-sum{order:-1;padding:22px 24px}
+  .wiz-sum{padding:22px 24px}
   .wiz-sum .sum-foot{display:none}
   .sum-list{flex-direction:row;flex-wrap:wrap}
   .sum-list li{flex:1 1 auto}
@@ -629,16 +636,17 @@ input,select,textarea{font:inherit;color:inherit}
   .prop-b{min-height:104px;padding:22px 16px 20px;font-size:14px;gap:10px}
   .steps{grid-template-columns:1fr}
   .fr-2{grid-template-columns:1fr}
-  .wiz-main{padding:22px 18px 24px}
-  .pick{grid-template-columns:1fr 1fr;gap:8px}
+  .wiz-main{padding:22px 16px 24px}
+  .pick{grid-template-columns:1fr 1fr;gap:10px}
   .pick-2{grid-template-columns:1fr}
-  .pk{padding:14px 10px;font-size:12.5px}
+  .pk{padding:16px 10px;font-size:14px;min-height:96px}
+  .pk svg{width:28px;height:28px}
+  .pk-w{min-height:0;padding:16px}
   .steps-row{grid-template-columns:1fr}
-  .seg{display:grid;grid-template-columns:1fr 1fr;width:100%;border-radius:var(--r)}
-  .sg{border-radius:var(--r);min-height:44px}
-  .wiz-nav{flex-direction:column-reverse;gap:8px}
-  .wiz-nav .btn{width:100%;margin-left:0}
-  .ch{min-height:44px}
+  .seg{display:grid;grid-template-columns:1fr 1fr}
+  .wiz-nav{flex-direction:column-reverse;gap:10px}
+  .wiz-nav .btn{width:100%;margin-left:0;min-height:54px}
+  .wiz-q{font-size:21px}
   .hero{padding-top:calc(var(--nav-h) + 34px);padding-bottom:56px}
   .hero-cta{gap:10px}
   .hero-cta .btn{flex:1 1 100%}

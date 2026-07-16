@@ -1034,9 +1034,15 @@
     $('#wizBack').hidden = n === 1;
     $('#wizNext').hidden = n === STEPS;
     $('#wizSend').hidden = n !== STEPS;
-    var top = $('#estimate').getBoundingClientRect().top + window.scrollY - 90;
-    if (window.scrollY > top + 40 || window.scrollY < top - 400) {
-      window.scrollTo({ top: top, behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
+
+    // Park the wizard head just under the sticky nav — same spot on every step,
+    // so moving between steps reads as one steady screen instead of a jump.
+    var wiz = $('.wiz');
+    var navH = $('#nav').offsetHeight || 76;
+    var target = wiz.getBoundingClientRect().top + window.scrollY - navH - 12;
+    var already = Math.abs(window.scrollY - target) < 8;
+    if (!already) {
+      window.scrollTo({ top: target, behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
     }
   }
 
@@ -1145,6 +1151,16 @@
       if (card) { card.click(); setTimeout(function () { showStep(2); }, 300); }
     });
   });
+
+  /* ---- keep the floating WhatsApp button out of the form's way ---- */
+  (function () {
+    var float = $('.wa-float');
+    var est = $('#estimate');
+    if (!float || !est || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (entries) {
+      float.classList.toggle('is-away', entries[0].isIntersecting);
+    }, { threshold: 0.12 }).observe(est);
+  })();
 
   renderSummary();
   showStep(1);
