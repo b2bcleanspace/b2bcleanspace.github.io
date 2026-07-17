@@ -10,8 +10,9 @@
      Contact details. WA_NUMBER is the WhatsApp line the estimate form
      writes to — digits only, no "+" and no spaces.
      ------------------------------------------------------------------ */
-  var WA_NUMBER = '971588573373';
-  var PHONE_MAIN = '+971 58 699 7277';
+  var WA_NUMBER = '971522024597';
+  // shown as the fallback if WhatsApp fails to open — same line as WA_NUMBER
+  var PHONE_MAIN = '+971 52 202 4597';
 
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
